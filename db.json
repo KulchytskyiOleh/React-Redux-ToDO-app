@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "as",
+      "completed": true,
+      "category": "My todos"
+    },
+    {
+      "id": 10,
+      "text": "sdf",
+      "completed": false,
+      "category": "My todos"
+    },
+    {
+      "id": 11,
+      "text": "sdfsdfsdf",
+      "completed": true,
+      "category": "My todos"
+    },
+    {
+      "id": 12,
+      "text": "123",
+      "completed": false,
+      "category": "My todos"
+    },
+    {
+      "id": 13,
+      "text": "123",
+      "completed": true,
+      "category": "My todos"
+    },
+    {
+      "id": 14,
+      "text": "fsd",
+      "completed": false,
+      "category": "My todos"
+    }
+  ]
+}

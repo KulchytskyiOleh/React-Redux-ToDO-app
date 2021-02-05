@@ -1,0 +1,8 @@
+.todoItemList {
+  grid-area: todoItemList;
+  padding: 10px;
+  min-width: 300px;
+  margin: 10px 0px;
+  background-color: #add8e6;
+  display: grid;
+}

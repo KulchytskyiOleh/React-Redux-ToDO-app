@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { /* useState,  useEffect*/ } from "react";
+import "./App.css";
+// import axios from "axios";
+import { connect } from "react-redux";
+import { addTodo, deleteTodo, handleChange } from "./redux/actions";
+import AddTodo from "./components/AddTodoForm/AddTodo";
+import TodoItemList from "./components/TodoItemList/TodoItemList";
+function App(props) {
 
-function App() {
+
+  // useEffect(() => {}, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AddTodo todos={props.todos} addTodo={props.addTodo} />
+      <br />
+      <TodoItemList
+        todos={props.todos}
+        addTodo={props.addTodo}
+        deleteTodo={props.deleteTodo}
+        handleChange={props.handleChange}
+      />
     </div>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    todos: state.todos,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addTodo: (text) => dispatch(addTodo(text)),
+    deleteTodo: (id) => dispatch(deleteTodo(id)),
+    handleChange: (id) => dispatch(handleChange(id)),
+  };
+};
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

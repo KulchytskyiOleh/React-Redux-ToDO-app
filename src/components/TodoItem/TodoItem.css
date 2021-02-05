@@ -1,0 +1,38 @@
+div {
+  display: block;
+  background-color: #d3d3d3;
+  color: #000000;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.todoItem {
+  display: grid;
+  margin: 5px;
+  background-color: #ffff00;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-areas: "checkbox todoItemText todoItemDelete";
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: 2px line-through #000000;
+  font-style: italic;
+  background-color: #003a85;
+  color: #ffffff;
+}
+.todoItemCheckbox {
+  grid-area: checkbox;
+
+}
+.todoItemText {
+
+  justify-self: start;
+  grid-area: todoItemText;
+  padding: 10px 15px;
+}
+.todoItemDelete {
+  grid-area: todoItemDelete;
+
+}
