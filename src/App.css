@@ -30,8 +30,8 @@
 
 .App {
   margin: auto;
-  width:50%;
-  background-color: lightgreen;
+  width: 50%;
+  background-color: #90c4ee;
   display: grid;
   justify-items: center;
   grid-template-areas:
