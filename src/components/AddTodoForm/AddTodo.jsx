@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./AddTodo.css";
-const AddTodo = ({ addTodo }) => {
+const AddTodo = ({ onAddTodo }) => {
   const [text, setText] = useState("");
   let onSubmit = (e) => {
     e.preventDefault();
-    addTodo(text);
+    onAddTodo(text);
     setText("");
   };
 

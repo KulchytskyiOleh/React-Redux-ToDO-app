@@ -25,14 +25,8 @@
       "category": "My todos"
     },
     {
-      "id": 13,
-      "text": "123",
-      "completed": true,
-      "category": "My todos"
-    },
-    {
       "id": 14,
-      "text": "fsd",
+      "text": "sdfsdf",
       "completed": false,
       "category": "My todos"
     }

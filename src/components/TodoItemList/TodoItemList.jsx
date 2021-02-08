@@ -2,7 +2,7 @@ import React from "react";
 import "./TodoItemList.css";
 import TodoItem from "../TodoItem/TodoItem";
 
-function TodoItemList({ todos, deleteTodo, handleChange }) {
+function TodoItemList({ todos, deleteTodo, handleChange, onTodoDelete }) {
   return (
     <div className="todoItemList">
       {todos.map((item) => (
@@ -12,6 +12,7 @@ function TodoItemList({ todos, deleteTodo, handleChange }) {
           title={item.text}
           completed={item.completed}
           deleteTodo={deleteTodo}
+          onTodoDelete={onTodoDelete}
           handleChange={handleChange}
         />
       ))}

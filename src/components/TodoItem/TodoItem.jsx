@@ -2,7 +2,7 @@ import React /* useState */ from "react";
 import { FaWindowClose } from "react-icons/fa";
 import "./TodoItem.css";
 
-function TodoItem({ item, deleteTodo, handleChange }) {
+function TodoItem({ item, deleteTodo, handleChange, onTodoDelete }) {
   return (
     <>
       <div className={item.completed ? "todoItem completed" : "todoItem"}>
@@ -19,7 +19,8 @@ function TodoItem({ item, deleteTodo, handleChange }) {
           {item.text}
         </p>
         <span className="todoItemDelete">
-          <FaWindowClose onClick={() => deleteTodo(item.id)} />
+          <FaWindowClose onClick={() => onTodoDelete(item.id)} />
+          {/* <FaWindowClose onClick={() => deleteTodo(item.id)} /> */}
         </span>
       </div>
     </>

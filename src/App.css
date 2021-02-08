@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
 }
 
 .App-link {
@@ -31,7 +31,7 @@
 .App {
   margin: auto;
   width: 50%;
-  background-color: #90c4ee;
+  /* background-color: #90c4ee; */
   display: grid;
   justify-items: center;
   grid-template-areas:
